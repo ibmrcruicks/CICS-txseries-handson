@@ -22,7 +22,7 @@ x3270 localhost:3270
 ```
 will bring up an empty 3270 terminal sesssion; enter `MENU` as the first transaction name
 
-![Initial screen](/imgs/cicstx-initial.png)
+![Initial screen](/imgs/cicstx-initial-screen.png)
 
 and press `ENTER` key.
 
