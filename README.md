@@ -15,7 +15,10 @@ docker run -it -p 3270:3270 -p 9443:9443 -e LICENSE=accept ibmcom/txseries
 ```
 
 x3270, or similar host terminal emulator
-( [tn3270 X](https://www.brown.edu/cis/tn3270/index.html#latest) )
+( [tn3270 X for mac](https://www.brown.edu/cis/tn3270/index.html#latest) )
 
 ```
 x3270 localhost:3270
+will bring up an empty 3270 terminal sesssion; enter `MENU` as the first transaction name
+
+![Installation verification - MENU](/img/cicstx-ivp-menu.png)
