@@ -19,6 +19,11 @@ x3270, or similar host terminal emulator
 
 ```
 x3270 localhost:3270
+```
 will bring up an empty 3270 terminal sesssion; enter `MENU` as the first transaction name
 
-![Installation verification - MENU](/img/cicstx-ivp-menu.png)
+![Initial screen](/imgs/cicstx-initial.png)
+
+and press `ENTER` key.
+
+![Installation verification - MENU](/imgs/cicstx-ivp-menu.png)
