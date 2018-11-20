@@ -13,15 +13,28 @@ Click on the [Try the CICS TXeries Beta (Windows, Linux, AIX)](https://hub.docke
 
 You will need the current version of [Docker](https://www.docker.com/get-started) installed and running on your laptop/workstation, and an active internet connection.
 
-The following command will 
+Open a terminal window (shell, cmd, etc)
+
+The following terminal command will 
 + create a docker container from ubuntu
 + install the TXSeries current beta 
 + configure the TXSeries default instance and activate the server
 + expose the web-admin port and the terminal server port (3270 emulator required for access)
 
 ```
-docker run -it -p 3270:3270 -p 9443:9443 -h TXSERIES -e LICENSE=accept ibmcom/txseries
+docker run -it -p 3270:3270 -p 9443:9443 --name TXSERIES -e LICENSE=accept ibmcom/txseries
 ```
+
+this will leave the docker session running in this command window, allowing you to see the runtime logs.
+
+Open another terminal window and check on the docker process running TXSeries:
+```
+docker ps
+```
+You should see something similar to:
+![cicstx-docker-ps](/imgs/cicstx-docker-ps)
+
+
 ### Installation Verification Program (IVP)
 Connect to a terminal seession with x3270, [IBM Personal Communications](https://www.ibm.com/uk-en/marketplace/personal-communications), [tn3270 X for mac](https://www.brown.edu/cis/tn3270/index.html#latest),or similar host terminal emulator
 
