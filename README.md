@@ -32,7 +32,7 @@ Open another terminal window and check on the docker process running TXSeries:
 docker ps
 ```
 You should see something similar to:
-![cicstx-docker-ps](/imgs/cicstx-docker-ps)
+![cicstx-docker-ps](/imgs/cicstx-docker-ps.png)
 
 
 ### Installation Verification Program (IVP)
